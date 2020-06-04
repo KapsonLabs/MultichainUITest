@@ -11,8 +11,7 @@ const Cards = () => {
                         <Card.Body>
                             <Card.Title>Assets</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            4
                             </Card.Text>
                             <Button variant="primary">View</Button>
                         </Card.Body>
@@ -24,8 +23,7 @@ const Cards = () => {
                         <Card.Body>
                             <Card.Title>Streams</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            3
                             </Card.Text>
                             <Button variant="primary">View</Button>
                         </Card.Body>
@@ -37,8 +35,7 @@ const Cards = () => {
                         <Card.Body>
                             <Card.Title>Wallets</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            4
                             </Card.Text>
                             <Button variant="primary">View</Button>
                         </Card.Body>
@@ -50,8 +47,7 @@ const Cards = () => {
                         <Card.Body>
                             <Card.Title>Balances</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            100,000
                             </Card.Text>
                             <Button variant="primary">View</Button>
                         </Card.Body>
