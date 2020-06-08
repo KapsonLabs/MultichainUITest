@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://mc2.cryptosavannah.com'
+const url = 'https://mc2.cryptosavannah.com'
 
 export const getBlockchainInfo = async () => {
     try {
