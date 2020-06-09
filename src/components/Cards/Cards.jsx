@@ -1,60 +1,22 @@
 import React from 'react';
-import {Container, Row, Col, Card, Button} from 'react-bootstrap';
+import {Col, Card, Button} from 'react-bootstrap';
 
-const Cards = () => {
+
+const Cards = (props) => {
 
     return(
-        <Container fluid>
-            <Row>
-                <Col md="3">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>Assets</Card.Title>
-                            <Card.Text>
-                            4
-                            </Card.Text>
-                            <Button variant="primary">View</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col md="3">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>Streams</Card.Title>
-                            <Card.Text>
-                            3
-                            </Card.Text>
-                            <Button variant="primary">View</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col md="3">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>Wallets</Card.Title>
-                            <Card.Text>
-                            4
-                            </Card.Text>
-                            <Button variant="primary">View</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col md="3">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>Balances</Card.Title>
-                            <Card.Text>
-                            100,000
-                            </Card.Text>
-                            <Button variant="primary">View</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
+        
+        <Col md="3">
+            <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Title>{props.name}</Card.Title>
+                    <Card.Text>
+                    {props.number}
+                    </Card.Text>
+                    <Button variant="primary">{props.buttonname}</Button>
+                </Card.Body>
+            </Card>
+        </Col>               
     )
 }
 

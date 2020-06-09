@@ -1,29 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
-import {Navbars, Cards, Tables, ListGroups} from './components';
-import {getBlockchainInfo, listStreams} from './services'
+import {Dashboard, Assets, Streams} from './pages'
+
 
 
 class App extends Component {
-  state = {
-    data: {},
-    streams: {}
-  }
-
-  async componentDidMount () {
-    const blockchainInfo = await getBlockchainInfo();
-    this.setState({data: blockchainInfo})
-  }
+  
 
   render() {
-    const {data} = this.state
     return (
       <div className="App">
-        <Navbars/>
-        <Cards/>
-        <Tables/>
-        <ListGroups data={data}/>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact component={Dashboard}/>
+            <Route path="/assets" component={Assets}/>
+            <Route path="/streams" component={Streams}/>
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }

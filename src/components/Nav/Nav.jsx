@@ -1,8 +1,15 @@
 import React from 'react';
 import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 
 const Navbars = () => {
+
+    const navStyle= {
+        color: 'grey',
+        padding: '10px',
+        listStyle: 'none',
+    }
 
     return (
         <div className="container-fluid">
@@ -11,8 +18,9 @@ const Navbars = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                    <Nav.Link href="#home">Dashboard</Nav.Link>
-                    <Nav.Link href="#link">Assets</Nav.Link>
+                        <Link style={navStyle} to="/">Dashboard</Link>
+                        <Link style={navStyle} to="/assets">Assets</Link>
+                        <Link style={navStyle} to="/streams">Streams</Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
