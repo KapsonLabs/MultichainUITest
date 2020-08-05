@@ -38,3 +38,12 @@ export const listAddresses = async () => {
     }
 }
 
+export const listLeaderboard = async () => {
+    try {
+        const {data} =  await axios.get(`${url}/leaderboard/list`)
+        return data
+    } catch(error){
+        console.log(error)
+    }
+}
+
